@@ -6,14 +6,9 @@ title: 'Research'
 <h1 style="margin-top:0;">Research</h1>
 
 <p class="lead"><small>
-    <b>The remainder of this text is NOT updated, and belongs to <a href="https://bryandmartin.github.io/">Bryan
-        Martin</a>.</b>
-    My research experience broadly concerns creating methods that tackle applied data science problems, and have
-    statistical guarantees.
-    I deeply value interdisciplinary collaboration, and welcome you to <a class="active" href="contact.html">contact
-      me</a> if you are interested.
-    You can find detailed information about my publications, software, and other work on <a class="active"
-      href="cv.html">my CV</a>.</small></p>
+    My research experience concerns creating methods that 1) tackle applied data science problems, 2) have
+    statistical guarantees, and 3) are implemented in user-friendly software packages.
+    You can find detailed information including references on <a class="active" href="cv.html">my CV</a>.</small></p>
 
 <h4 style="margin-top:0">Lifelong Learning</h4>
 <p class="content" style="padding:0px;margin:0px 20px 0px;">
@@ -23,11 +18,27 @@ title: 'Research'
 
 <h4 style="margin-top:0">Decision Forest Theory and Methods</h4>
 <p class="content" style="padding:0px;margin:0px 20px 0px;">
-  Blurb.
+  Decision forests (a.k.a. random forests) are versatile tools for machine learning practitioners, having both
+  theoretical connections to classical partition rules, and applied advantages such as interpretability, robustness to
+  hyperparameters, and parallelizability. When using honest sampling (using separate data to estimate the decision trees
+  and the within-leaf probabilities), one can achieve calibrated uncertainty estimates in problems such as
+  classification. Leveraging this, I worked on Uncertainty Forests (UF), a decision forest method to nonparametrically
+  estimate the conditional entropy and mutual information between random variables. These are fundamental information
+  functionals of random variables, and notoriously difficult to estimate. I also worked on Manifold Oblique Random
+  Forests (MORF), an extension of random forests for structured data such as time series and images. MORF leverages
+  local dependence between features to generate partitions of feature space that are more information for tasks such as
+  image classification.
 </p>
 <br />
 
 <h4 style="margin-top:0">Nonparametric Estimation and Testing</h4>
 <p class="content" style="padding:0px;margin:0px 20px 0px;">
-  Blurb.
+  Independence testing (detecting whether random variables are dependent from samples) and two-sample testing (detecting
+  whether random variables are from different distributions from samples) are fundamental problems in statistics. Doing
+  so nonparametrically is difficult, especially in the case of high-dimensional, structured data. Kernel (or
+  equivalently, distance) methods and their many variants have shown promise for both of these problems. In this line of
+  work, I extended multiscale graph correlation (MGC), the state-of-the-art among these methods, to handle time series
+  data. The method, dubbed cross multiscale graph correlation (MGCX), outperforms competitors in detecting nonlinear
+  relationships between data, and has immediate applications functional connectomics via fMRI time series. MGCX is
+  implemented in hyppo, a general purpose software package for hypothesis testing in Python.
 </p>
