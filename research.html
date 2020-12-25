@@ -18,12 +18,12 @@ title: 'Research'
   observing the sequence. Many current methods suffer from “catastrophic forgetting”, in which algorithms may increase
   in performance forward in the sequence, but degrade in performance on past tasks. Our team proposed a general approach
   to not only combat forgetting, but actually increase performance on previous tasks, by ensembling data representations
-  from multiple tasks to make inferences. We instantiated our “<a href="http://www.stat.washington.edu/">ensembling
+  from multiple tasks to make inferences. We instantiated our “<a href="https://arxiv.org/abs/2004.12908">ensembling
     representations</a>” approach for both decision
   forests and neural networks, both of which are implemented in the open-source ProgLearn package. Another problem
   relevant to all of the aforementioned learning-to-learn settings is estimating task similarity, to assess whether
   other tasks are helpful, unhelpful, or adversarial for transfer learning. To this end, we proposed a novel and
-  principled measure of <a href="http://www.stat.washington.edu/">task similarity</a> that encapsulates canonical
+  principled measure of <a href="https://arxiv.org/abs/2011.06557">task similarity</a> that encapsulates canonical
   examples of helpful and adversarial tasks. While
   algorithms for all of these settings have been advancing rapidly, precise theoretical formulations of these problems
   are still being developed. As such, I am currently working on a comprehensive framework to cast learning-to-learn
@@ -38,11 +38,11 @@ title: 'Research'
   theoretical connections to classical partition rules, and applied advantages such as interpretability, robustness to
   hyperparameters, and parallelizability. When using honest sampling (using separate data to estimate the decision trees
   and the within-leaf probabilities), one can achieve calibrated uncertainty estimates in problems such as
-  classification. Leveraging this, our team developed <a href="http://www.stat.washington.edu/">Uncertainty Forests
+  classification. Leveraging this, our team developed <a href="https://arxiv.org/abs/1907.00325">Uncertainty Forests
     (UF)</a>, a decision forest method to
   nonparametrically estimate the conditional entropy and mutual information between random variables. These are
   fundamental information functionals of random variables, and notoriously difficult to estimate. We also proposed
-  <a href="http://www.stat.washington.edu/">Manifold Oblique Random Forests (MORF)</a>, an extension of random forests
+  <a href="https://arxiv.org/abs/1909.11799">Manifold Oblique Random Forests (MORF)</a>, an extension of random forests
   for structured data such as time series and
   images. MORF leverages local dependence between features to generate partitions of feature space that are more
   information for tasks such as image classification.
@@ -56,9 +56,9 @@ title: 'Research'
   so nonparametrically is difficult, especially in the case of high-dimensional, structured data. Kernel (or
   equivalently, distance) methods and their many variants have shown promise for both of these problems. In this line of
   work, I extended multiscale graph correlation (MGC), the state-of-the-art among these methods, to handle time series
-  data. The method, dubbed <a href="http://www.stat.washington.edu/">cross multiscale graph correlation (MGCX)</a>,
+  data. The method, dubbed <a href="https://arxiv.org/abs/1908.06486">cross multiscale graph correlation (MGCX)</a>,
   outperforms competitors in detecting nonlinear
   relationships between data, and has immediate applications functional connectomics via fMRI time series. MGCX is
-  implemented in <a href="http://www.stat.washington.edu/">hyppo</a>hyppo, a general purpose software package for
+  implemented in <a href="https://arxiv.org/abs/1907.02088">hyppo</a>, a general purpose software package for
   hypothesis testing in Python.
 </p>
